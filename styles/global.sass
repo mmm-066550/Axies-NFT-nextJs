@@ -1,26 +1,19 @@
 @use '../styles/variables'
 
-// ***************************************************************************
-// ***************************************************************************
-// ***************************************************************************
-
 // DARK MODE SETTINGS
-html[data-theme='dark']
-    --main-bg-color:  #14141F !important
-    --second-bg-color: #343444 !important
-    --main-text-color: #fff !important
+html[data-theme='dark'] 
+    --main_bg_color:#14141F
+    --second_bg_color:#343444
+    --main_text_color:#fff
 
 // LIGHT MODE SETTINGS
-html[data-theme='light']  
-    --main-bg-color: #fff !important
-    --second-bg-color: #fff !important
-    --main-text-color:  #14141F !important
+html[data-theme='light'] 
+    --main_bg_color:#fff
+    --second_bg_color:#fff
+    --main_text_color:#14141F
 
-// ***************************************************************************
-// ***************************************************************************
-// ***************************************************************************
 body
-    color: var(--main-text-color)
+    color: var(--main_text_color)
     font-family: variables.$main-font
     font-size: variables.$main-font-size
     &::-webkit-scrollbar
@@ -46,9 +39,12 @@ button
     -webkit-text-fill-color: #14141f
 .sub_heading
     font-size: 20px
-html[data-theme='dark']
+
+
+:root, html[data-theme='dark']
     body
         background: variables.$main-bg-color !important
+
 html[data-theme='light'] 
     body
         background: variables.$white-text-color !important
