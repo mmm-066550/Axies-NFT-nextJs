@@ -6,23 +6,19 @@
 
 // DARK MODE SETTINGS
 html[data-theme='dark']
-    --main-bg-color:  #14141F
-    --sec-bg-color: #343444
-    --main-text-color: #fff
+    --main-bg-color:  #14141F !important
+    --second-bg-color: #343444 !important
+    --main-text-color: #fff !important
 
 // LIGHT MODE SETTINGS
-html[data-theme='light'] 
-    --main-bg-color: #fff
-    --sec-bg-color: #fff
-    --main-text-color:  #14141F
-// ***************************************************************************
-// ***************************************************************************
-// ***************************************************************************
+html[data-theme='light']  
+    --main-bg-color: #fff !important
+    --second-bg-color: #fff !important
+    --main-text-color:  #14141F !important
 
-*,*::after,*::before
-    padding: 0
-    margin: 0
-
+// ***************************************************************************
+// ***************************************************************************
+// ***************************************************************************
 body
     color: var(--main-text-color)
     font-family: variables.$main-font
@@ -50,12 +46,9 @@ button
     -webkit-text-fill-color: #14141f
 .sub_heading
     font-size: 20px
-
-
-:root, html[data-theme='dark']
+html[data-theme='dark']
     body
         background: variables.$main-bg-color !important
-
 html[data-theme='light'] 
     body
         background: variables.$white-text-color !important
