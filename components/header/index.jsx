@@ -35,14 +35,16 @@ export default function Header() {
             <div className="app_brand_logo d-flex">
               <Link href={"/"}>
                 <a className="d-inline-flex">
-                  <Image
-                    alt="app_logo"
-                    src={`/static/assets/images/logo_${theme}.png`}
-                    width={133}
-                    height={56}
-                    layout="fixed"
-                    quality={100}
-                  />
+                  {theme && (
+                    <Image
+                      alt="app_logo"
+                      src={`/static/assets/images/logo_${theme}.png`}
+                      width={133}
+                      height={56}
+                      layout="fixed"
+                      quality={100}
+                    />
+                  )}
                 </a>
               </Link>
             </div>
