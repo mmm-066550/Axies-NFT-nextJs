@@ -31,7 +31,7 @@ export default function NFTCard() {
         </div>
         <div className={`${styles.nft_info_row}`}>
           <Link href={"/"}>
-            <a className={styles.nft_name}>"The RenaiXance Rising The Sun "</a>
+            <a className={styles.nft_name}>The RenaiXance Rising The Sun</a>
           </Link>
           <span className={styles.nft_BSC}>BSC</span>
         </div>
