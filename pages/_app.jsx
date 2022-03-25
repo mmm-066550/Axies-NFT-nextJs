@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 
 // GLOBAL STYLES
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/fonts.css";
 import "../styles/global.sass";
 
 function MyApp({ Component, pageProps }) {
