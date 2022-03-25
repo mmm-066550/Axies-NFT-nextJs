@@ -1,14 +1,15 @@
 @use '../styles/variables'
 
-:root,html[data-theme='dark'] 
-    --main_bg_color: #14141F
-    --second_bg_color: #343444
-    --main_text_color: #fff
+
 html[data-theme='light'] 
     --main_bg_color: #fff
     --second_bg_color: #fff
     --main_text_color: #14141F
-
+html[data-theme='dark'] 
+    --main_bg_color: #14141F
+    --second_bg_color: #343444
+    --main_text_color: #fff
+    
 body
     background: var(--main_bg_color)
     color: var(--main_text_color)
@@ -37,6 +38,12 @@ button
     -webkit-text-fill-color: #14141f
 .sub_heading
     font-size: 20px
+    .gradient_text
+        background: transparent
+        -webkit-text-stroke: 1px #fff
+        -webkit-text-fill-color: transparent
+
+html[data-theme='light'] 
     .gradient_text
         background: transparent
         -webkit-text-stroke: 1px #fff
