@@ -1,0 +1,45 @@
+@use '../../styles/variables'
+
+.home_page_hero_section
+    // overflow: hidden
+    display: flex
+    min-height: 750px
+    background: variables.$main-bg-color
+    color: variables.$white-text-color
+    .bg_gradient
+        width: 100%
+        position: absolute !important
+        transform: translate(-25%, -50%)
+        user-select: none
+        pointer-events: none
+    .bottom_right
+        width: 50%
+        left: auto !important
+        right: 0 !important
+        top: auto !important
+        bottom: 0 !important
+        transform: translate(0%, 0%)
+    .animated_images_wrapper
+        width: 100%
+        height: 100%
+        margin-top: 100px
+        display: grid
+        place-items: center
+        animation: top_bottom 5s linear infinite alternate
+        img
+            position: absolute
+@keyframes top_bottom
+  0%
+      transform: translateY(-10%)
+  100%
+      transform: translateY(-5%)
+
+
+html[data-theme='light'] 
+    .home_page_hero_section
+        min-height: 750px
+        background-repeat: no-repeat !important
+        background-size: cover !important
+        background-position: center !important
+        background: linear-gradient(#00000050,transparent), url(/static/assets/images/light_hero_bg.jpg)
+        

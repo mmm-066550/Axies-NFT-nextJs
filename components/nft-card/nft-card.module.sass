@@ -1,0 +1,135 @@
+@use '../../styles/variables'
+.nft_card_styled
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 20%)
+    background: var(--sec-bg-color)
+    min-height: 484px
+    border-radius: 20px
+    padding: 20px
+    margin: 15px 0 
+    &:hover
+        .nft_img_wrapper
+            img
+                transform: scale(1.05) !important
+    .nft_img_wrapper
+        position: relative
+        overflow: hidden
+        min-height: 268.5px
+        border-radius: 20px
+        background: var(--main-bg-color)
+        display: grid
+        place-items: center
+        img
+            transition: all variables.$hover-trans-d
+        .nft_likes
+            position: absolute
+            right: 11px
+            top: 13px
+            border-radius: 8px
+            color: #fff
+            background: variables.$main-bg-color
+            font-weight: 700
+            padding: .25rem .6rem
+            display: flex
+            align-items: center
+            svg
+                font-size: 18px
+        .nft_comming_soon
+            position: absolute
+            left: 11px
+            top: 13px
+            color: variables.$main-bg-color
+            background: var(--bs-yellow)
+            padding: .25rem 1rem
+            font-weight: 700
+            border-radius: 100px
+            text-transform: capitalize
+    .nft_info_row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 1.25rem
+        .nft_name
+            font-weight: 700
+            letter-spacing: 0.1px
+            font-size: 18px
+            color: var(--main-text-color)
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            max-width: 75%
+        .nft_BSC
+            padding: 0.2rem .6rem
+            letter-spacing: 1px
+            border-radius: 1000px
+            font-size: 12px
+            font-weight: 700
+            background: variables.$purple-color
+            color: #fff
+        .nft_owner_wrapper
+            display: flex
+            align-items: center
+            .nft_owner_avatar
+                width: 45px
+                height: 45px
+                border-radius: 15px
+                margin-right: .75rem
+                background: var(--main-bg-color)
+                overflow: hidden
+            .nft_owner_info
+                text-transform: capitalize
+                display: flex
+                flex-direction: column
+                .owned_by
+                    font-size: 13px
+                    color: variables.$gray-color
+                .nft_owner_link
+                    font-size: 15px
+                    color: var(--main-text-color)
+                    font-weight: 700
+        .nft_bid_wrapper
+            display: flex
+            flex-direction: column
+            text-transform: capitalize
+            .current_bid
+                font-size: 13px
+                color: variables.$gray-color
+            .current_bid_value
+                font-size: 18px
+                color: var(--main-text-color)
+                font-weight: 700
+                text-transform: uppercase
+        .nft_place_bid_btn
+            font-weight: 700
+            padding: .5rem 1rem
+            text-transform: capitalize
+            border-radius: 1000px
+            border: 2px solid variables.$purple-color
+            display: flex
+            align-items: center
+            transition: all variables.$hover-trans-d
+            svg
+                font-size: 20px
+                line-height: 0
+                margin-bottom: 2px
+            &:hover
+                border-color: variables.$white-text-color
+                background: #fff
+                color: variables.$purple-color
+        .nft_activity_link
+            text-transform: capitalize
+            color: variables.$gray-color
+            font-weight: 700
+            display: flex
+            align-items: center
+            svg
+                font-size: 22px
+                color: var(--main-text-color)
+            
+html[data-theme='light'] 
+    .nft_card_styled
+        .nft_info_row
+            .nft_place_bid_btn
+                color: variables.$purple-color
+                &:hover
+                    background: variables.$purple-color
+                    color: variables.$white-text-color

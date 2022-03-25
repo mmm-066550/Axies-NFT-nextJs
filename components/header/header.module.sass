@@ -1,0 +1,38 @@
+@use '../../styles/variables'
+
+.main_header_wrapper
+    position: fixed
+    z-index: 2
+    top: 0
+    height: 80px
+    width: 100%
+    display: flex
+    align-items: center
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2)
+    color: variables.$white-text-color
+    &.sticky_top
+        border-color: variables.$main-bg-color
+        box-shadow: 1px 1px 10px #00000040
+        background: variables.$main-bg-color
+        position: fixed
+        top: 0
+    svg
+        font-size: variables.$main-icon-size
+    .mode_toggle_btn
+        color: variables.$white-text-color
+        background: variables.$main-linear-gradient-s
+        width: 40px
+        height: 40px
+        border-radius: 10px
+        text-align: center
+        line-height: variables.$main-icon-size
+
+
+html[data-theme='light'] 
+    .main_header_wrapper
+        &.sticky_top
+            border-color: transparent
+            background: linear-gradient(227.3deg, #8A208C 0%, #181B81 100.84%)
+        .mode_toggle_btn
+            color: variables.$purple-color
+            background: variables.$white-text-color

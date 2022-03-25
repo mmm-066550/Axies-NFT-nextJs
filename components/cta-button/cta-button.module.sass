@@ -1,0 +1,27 @@
+@use '../../styles/variables'
+
+.cta_button_link
+    color: variables.$white-text-color
+    padding: 13px 35px
+    font-size: 15px
+    font-weight: 700
+    border: 2px solid variables.$purple-color
+    border-radius: 100px
+    display: flex
+    align-items: center
+    transition: all variables.$hover-trans-d
+    span
+        display: flex
+        align-items: center
+        line-height: 0
+    svg
+        font-size: 22px
+    &:hover
+        color: variables.$purple-color
+        background: variables.$white-text-color
+        border-color: variables.$white-text-color
+        
+
+html[data-theme='light'] 
+    .cta_button_link
+        border: 2px solid variables.$white-text-color

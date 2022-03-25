@@ -1,0 +1,65 @@
+@use '../styles/variables'
+
+// ***************************************************************************
+// ***************************************************************************
+// ***************************************************************************
+
+// DARK MODE SETTINGS
+:root, html[data-theme='dark'] 
+    --main-bg-color :  #14141F
+    --sec-bg-color : #343444
+    --main-text-color : #fff
+
+// LIGHT MODE SETTINGS
+html[data-theme='light'] 
+    --main-bg-color : #fff
+    --sec-bg-color : #fff
+    --main-text-color :  #14141F
+// ***************************************************************************
+// ***************************************************************************
+// ***************************************************************************
+
+*,*::after,*::before
+    padding: 0
+    margin: 0
+
+body
+    color: var(--main-text-color)
+    font-family: variables.$main-font
+    font-size: variables.$main-font-size
+    &::-webkit-scrollbar
+        display: none
+a
+    text-decoration: none
+button
+    all: unset
+    cursor: pointer
+.container
+    padding-left: 30px
+    padding-right: 30px
+    max-width: 1440px
+.heading
+    font-size: 56px
+    font-weight: 700
+.gradient_text
+    color: #14141f
+    background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6)
+    background-size: 100% 100%
+    -webkit-background-clip: text
+    -webkit-text-stroke: 3px transparent
+    -webkit-text-fill-color: #14141f
+.sub_heading
+    font-size: 20px
+
+
+:root, html[data-theme='dark']
+    body
+        background: variables.$main-bg-color !important
+
+html[data-theme='light'] 
+    body
+        background: variables.$white-text-color !important
+    .gradient_text
+        background: transparent
+        -webkit-text-stroke: 1px #fff
+        -webkit-text-fill-color: transparent
