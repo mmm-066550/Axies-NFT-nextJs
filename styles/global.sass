@@ -13,6 +13,7 @@ html[data-theme='light']
     --main_text_color:#14141F
 
 body
+    background: var(--main_bg_color)
     color: var(--main_text_color)
     font-family: variables.$main-font
     font-size: variables.$main-font-size
@@ -39,14 +40,6 @@ button
     -webkit-text-fill-color: #14141f
 .sub_heading
     font-size: 20px
-
-
-html[data-theme='dark']
-    body
-        background: variables.$main-bg-color !important
-html[data-theme='light'] 
-    body
-        background: variables.$white-text-color !important
     .gradient_text
         background: transparent
         -webkit-text-stroke: 1px #fff
