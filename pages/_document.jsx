@@ -4,12 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <style
-          data-href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=optional"
-          rel="stylesheet"
-        ></style>
+        <link rel="stylesheet" href="/static/assets/fonts/font.css" />
       </Head>
       <body>
         <Main />
