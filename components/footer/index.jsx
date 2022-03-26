@@ -35,22 +35,22 @@ export default function Footer() {
             <p className={`${styles.footer_col_title} m-0 py-3`}>My Account</p>
             <ul className={styles.footer_nav_list}>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
@@ -60,22 +60,22 @@ export default function Footer() {
             <p className={`${styles.footer_col_title} m-0 py-3`}>Resources</p>
             <ul className={styles.footer_nav_list}>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
@@ -85,22 +85,22 @@ export default function Footer() {
             <p className={`${styles.footer_col_title} m-0 py-3`}>Company</p>
             <ul className={styles.footer_nav_list}>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/">
+                <Link href="/somewhere">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
@@ -124,32 +124,32 @@ export default function Footer() {
             <div className="social_media_links_wrapper pt-4">
               <ul className={styles.footer_social_list}>
                 <li>
-                  <a className={styles.footer_social_link} href="/">
+                  <a className={styles.footer_social_link} href="/somewhere">
                     <BsTwitter />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/">
+                  <a className={styles.footer_social_link} href="/somewhere">
                     <BsTwitter />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/">
+                  <a className={styles.footer_social_link} href="/somewhere">
                     <BsTwitter />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/">
+                  <a className={styles.footer_social_link} href="/somewhere">
                     <BsTwitter />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/">
+                  <a className={styles.footer_social_link} href="/somewhere">
                     <BsTwitter />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/">
+                  <a className={styles.footer_social_link} href="/somewhere">
                     <BsTwitter />
                   </a>
                 </li>
