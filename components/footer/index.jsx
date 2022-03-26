@@ -182,7 +182,7 @@ export default function Footer() {
                     <AiFillInstagram />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     className={styles.footer_social_link}
                     href="/"
@@ -191,7 +191,7 @@ export default function Footer() {
                   >
                     <BsTwitter />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
