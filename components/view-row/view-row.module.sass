@@ -1,0 +1,30 @@
+@use '../../styles/variables'
+    
+.view_row
+    .view_row_title
+        font-weight: 700
+        font-size: 36px
+        text-transform: capitalize
+    .view_row_more_link
+        text-transform: uppercase
+        position: relative
+        color: var(--main_text_color)
+        font-weight: 700
+        letter-spacing: 0.1em
+        padding-bottom: 7px
+        &::after
+            position: absolute
+            bottom: 0
+            right: 0
+            display: flex
+            width: 100%
+            height: 1px
+            content: '' 
+            background: linear-gradient(227.3deg, #c12cc3 0%, #282caf 100.84%)
+        &:hover
+            color: transparent
+            background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6)
+            background-size: 100% 100%
+            -webkit-background-clip: text
+            -webkit-text-stroke: 0px transparent
+            -webkit-text-fill-color: transparent

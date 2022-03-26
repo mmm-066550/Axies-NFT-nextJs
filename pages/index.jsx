@@ -1,38 +1,20 @@
 import Hero from "../components/home-hero";
-import NFTCard from "../components/nft-card";
-import SellerCard from "../components/seller-card";
 import CollectionCard from "../components/collection-card";
+import Features from "../components/features";
+import LiveAuctions from "../components/live-auctions";
+import TopSellsers from "../components/top-sellers";
+import TodayPicks from "../components/today-picks";
+import PopularCollection from "../components/popular-collection";
 
 export default function Home() {
   return (
     <div className="home_page">
       <Hero />
-      <div className="container my-5">
-        <div className="row">
-          <NFTCard id={1} />
-          <NFTCard id={2} />
-          <NFTCard id={3} />
-          <NFTCard id={4} />
-        </div>
-      </div>
-      <div className="container my-5">
-        <div className="row">
-          <SellerCard id={1} />
-          <SellerCard id={2} />
-          <SellerCard id={3} />
-          <SellerCard id={4} />
-          <SellerCard id={5} />
-          <SellerCard id={6} />
-        </div>
-      </div>
-      <div className="container my-5">
-        <div className="row">
-          <CollectionCard id={1} />
-          <CollectionCard id={2} />
-          <CollectionCard id={3} />
-          <CollectionCard id={1} />
-        </div>
-      </div>
+      <LiveAuctions />
+      <TopSellsers />
+      <TodayPicks />
+      <PopularCollection />
+      <Features />
     </div>
   );
 }

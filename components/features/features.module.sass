@@ -1,0 +1,42 @@
+@use '../../styles/variables'
+.features_wrapper
+    .feature_item
+        .feature_item_icon
+            width: 60px
+            height: 60px
+            border-radius: 1rem
+            font-size: variables.$main-icon-size
+            display: grid
+            place-items: center
+            color: #FFF
+            &.feature_1
+                background: variables.$feature_1
+            &.feature_2
+                background: variables.$feature_2
+            &.feature_3
+                background: variables.$feature_3
+            &.feature_4
+                background: variables.$feature_4
+        &:hover
+            .feature_item_icon
+                animation: rotate 1s
+        .feature_item_link
+            display: inline-flex
+            padding: .75rem 0
+            color: var(--main_text_color)
+            font-size: 24px
+            font-weight: 700
+            text-transform: capitalize
+            transition: all variables.$hover-trans-d
+            &:hover
+                color: variables.$purple-color
+        .feature_item_overview
+            color: variables.$gray-color
+
+@keyframes rotate
+    0%
+        transform: rotateY(0deg)
+    100%
+        transform: rotateY(360deg)
+
+        

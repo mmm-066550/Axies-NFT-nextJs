@@ -4,9 +4,9 @@ import Link from "next/link";
 import { BsCheck } from "react-icons/bs";
 import Image from "next/image";
 
-export default function SellerCard({ id }) {
+export default function SellerCard({ id, fullWidth }) {
   return (
-    <div className="col-12 col-md-6 col-lg-4 my-3">
+    <div className={`my-3 ${fullWidth && "col-12 col-md-6 col-lg-4"}`}>
       <div className={styles.seller_card}>
         <div className={styles.seller_info}>
           <div className={styles.seller_avatar}>
@@ -23,7 +23,7 @@ export default function SellerCard({ id }) {
           </div>
           <div className={styles.about_seller}>
             <Link href={"/"}>
-              <a className={styles.seller_details_link}>someone name</a>
+              <a className={styles.seller_details_link}>Moustapha</a>
             </Link>
             <span className={styles.seller_username}>@mmm066550</span>
             <span className={styles.seller_earn}>23.3 ETH</span>

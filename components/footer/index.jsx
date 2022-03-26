@@ -5,6 +5,10 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { RiSendPlane2Fill } from "react-icons/ri";
 import { BsTwitter } from "react-icons/bs";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
+import { SiUpwork } from "react-icons/si";
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -15,18 +19,22 @@ export default function Footer() {
         <div className="row">
           <div className="py-3 col-12 col-xl-3">
             <div className="app_logo pb-3">
-              {theme && (
-                <Image
-                  alt="app_logo"
-                  src={`/static/assets/images/f_logo_${theme}.png`}
-                  width={133}
-                  height={56}
-                  layout="fixed"
-                  quality={100}
-                />
-              )}
+              <Link href={"/"}>
+                <a>
+                  {theme && (
+                    <Image
+                      alt="app_logo"
+                      src={`/static/assets/images/f_logo_${theme}.png`}
+                      width={133}
+                      height={56}
+                      layout="fixed"
+                      quality={100}
+                    />
+                  )}
+                </a>
+              </Link>
             </div>
-            <p className="m-0 w-50">
+            <p className="m-0 pe-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
               deleniti qui ex nisi earum reiciendis.
             </p>
@@ -35,23 +43,23 @@ export default function Footer() {
             <p className={`${styles.footer_col_title} m-0 py-3`}>My Account</p>
             <ul className={styles.footer_nav_list}>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/authors">
+                  <a className={styles.footer_nav_link}>Authors</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/wallet-connect">
+                  <a className={styles.footer_nav_link}>Collection</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/edit-profile">
+                  <a className={styles.footer_nav_link}>Author Profile</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/create-item">
+                  <a className={styles.footer_nav_link}>Create Item</a>
                 </Link>
               </li>
             </ul>
@@ -60,23 +68,23 @@ export default function Footer() {
             <p className={`${styles.footer_col_title} m-0 py-3`}>Resources</p>
             <ul className={styles.footer_nav_list}>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
+                <Link href="/help-center">
                   <a className={styles.footer_nav_link}>Help & Support</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/live-auctions">
+                  <a className={styles.footer_nav_link}>Live Auctions</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/item-details">
+                  <a className={styles.footer_nav_link}>Item Details</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/activity">
+                  <a className={styles.footer_nav_link}>Activity</a>
                 </Link>
               </li>
             </ul>
@@ -85,23 +93,23 @@ export default function Footer() {
             <p className={`${styles.footer_col_title} m-0 py-3`}>Company</p>
             <ul className={styles.footer_nav_list}>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/explore">
+                  <a className={styles.footer_nav_link}>Explore</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/contact-us">
+                  <a className={styles.footer_nav_link}>Contact us</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/blog">
+                  <a className={styles.footer_nav_link}>Our Blog</a>
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/somewhere">
-                  <a className={styles.footer_nav_link}>Help & Support</a>
+                <Link href="/faq">
+                  <a className={styles.footer_nav_link}>FAQ</a>
                 </Link>
               </li>
             </ul>
@@ -124,32 +132,63 @@ export default function Footer() {
             <div className="social_media_links_wrapper pt-4">
               <ul className={styles.footer_social_list}>
                 <li>
-                  <a className={styles.footer_social_link} href="/somewhere">
-                    <BsTwitter />
+                  <a
+                    className={styles.footer_social_link}
+                    href="https://github.com/mmm-066550"
+                    target={"_blank"}
+                    rel="noopener norefer"
+                  >
+                    <FiGithub />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/somewhere">
-                    <BsTwitter />
+                  <a
+                    className={styles.footer_social_link}
+                    href="https://www.linkedin.com/in/mmm066550"
+                    target={"_blank"}
+                    rel="noopener norefer"
+                  >
+                    <FaLinkedinIn />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/somewhere">
-                    <BsTwitter />
+                  <a
+                    className={styles.footer_social_link}
+                    href="https://www.fb.com/MOUSTAPHAMAHMMOUD"
+                    target={"_blank"}
+                    rel="noopener norefer"
+                  >
+                    <AiFillFacebook />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    className={styles.footer_social_link}
+                    href="https://www.upwork.com/freelancers/~01cfdc33084883523e"
+                    target={"_blank"}
+                    rel="noopener norefer"
+                  >
+                    <SiUpwork />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/somewhere">
-                    <BsTwitter />
+                  <a
+                    className={styles.footer_social_link}
+                    href="https://www.instagram.com/moustapha.mm"
+                    target={"_blank"}
+                    rel="noopener norefer"
+                  >
+                    <AiFillInstagram />
                   </a>
                 </li>
                 <li>
-                  <a className={styles.footer_social_link} href="/somewhere">
-                    <BsTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a className={styles.footer_social_link} href="/somewhere">
+                  <a
+                    className={styles.footer_social_link}
+                    href="/"
+                    target={"_blank"}
+                    rel="noopener norefer"
+                  >
                     <BsTwitter />
                   </a>
                 </li>

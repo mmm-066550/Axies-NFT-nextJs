@@ -5,9 +5,9 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
-export default function CollectionCard({ id }) {
+export default function CollectionCard({ id, fullWidth }) {
   return (
-    <div className="col-3">
+    <div className={`my-3 ${fullWidth && "col-12 col-md-6 col-lg-4 col-xl-3"}`}>
       <div className={styles.collection_card}>
         <div className={styles.collection_imgs_wrapper}>
           <span className={styles.collection_likes}>
@@ -30,7 +30,7 @@ export default function CollectionCard({ id }) {
             <Image
               alt="collection_bg"
               layout="fill"
-              src={`/static/assets/images/collection/${id}.jpg`}
+              src={`/static/assets/images/collection/${id}/full.jpg`}
               objectFit="cover"
               objectPosition={"center"}
               quality={100}
@@ -40,7 +40,7 @@ export default function CollectionCard({ id }) {
             <Image
               alt="collection_bg_1"
               layout="fill"
-              src={`/static/assets/images/collection/sm-${id}.jpg`}
+              src={`/static/assets/images/collection/${id}/sm-1.jpg`}
               objectFit="cover"
               objectPosition={"center"}
               quality={100}
@@ -50,7 +50,7 @@ export default function CollectionCard({ id }) {
             <Image
               alt="collection_bg_2"
               layout="fill"
-              src={`/static/assets/images/collection/sm.jpg`}
+              src={`/static/assets/images/collection/${id}/sm-2.jpg`}
               objectFit="cover"
               objectPosition={"center"}
               quality={100}

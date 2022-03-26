@@ -6,9 +6,9 @@ import { IoBagAddSharp } from "react-icons/io5";
 import { MdLoop } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 
-export default function NFTCard({ id }) {
+export default function NFTCard({ id, fullWidth }) {
   return (
-    <div className="col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+    <div className={`my-3 ${fullWidth && "col-12 col-md-6 col-lg-4 col-xl-3"}`}>
       <div className={styles.nft_card_styled}>
         <div className={styles.nft_img_wrapper}>
           <Link href={"/"}>
