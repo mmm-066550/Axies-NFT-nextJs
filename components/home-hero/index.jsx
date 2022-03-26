@@ -13,10 +13,11 @@ export default function Hero() {
     <section className={styles.home_page_hero_section}>
       <div className="container">
         <div className="row h-100">
-          <div className="col-6">
+          <div className="col-12 col-xl-6">
             <div className="position-relative h-100 d-flex align-items-center">
               {theme === "dark" && (
                 <img
+                  alt="bg_gradient_shadow"
                   className={styles.bg_gradient}
                   src={"/static/assets/images/gradient_bg_1.png"}
                 />
@@ -29,12 +30,12 @@ export default function Hero() {
                   Marketplace For Monster Character Collections Non Fungible
                   Token NFTs
                 </p>
-                <div className="cta_btns_wrapper d-flex">
+                <div className="cta_btns_wrapper d-sm-flex">
                   <CtaButton href={"/explore"}>
                     <IoIosRocket className="me-2" />
                     Explore
                   </CtaButton>
-                  <div className="mx-3">
+                  <div className=" my-3 my-sm-0 mx-sm-3">
                     <CtaButton href={"/create-item"}>
                       <HiOutlineDocumentDuplicate className="me-2" />
                       Create
@@ -44,7 +45,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="d-none d-xl-block col-6">
             <div className="position-relative h-100">
               {theme === "dark" && (
                 <img
@@ -55,7 +56,6 @@ export default function Hero() {
               )}
               <div className={styles.animated_images_wrapper}>
                 <img
-                  layout="fixed"
                   width={620}
                   height={450}
                   alt={"track-bg"}

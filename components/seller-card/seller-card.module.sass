@@ -1,0 +1,84 @@
+@use '../../styles/variables'
+
+.seller_card
+    border-radius: 20px
+    padding: 1rem
+    display: flex
+    // align-items: center
+    justify-content: space-between
+    background-color: var(--second_bg_color)
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 20%)
+    .seller_info
+        display: flex
+        align-items: center
+        .seller_avatar
+            width: 75px
+            height: 75px
+            background: var(--main_bg_color)
+            border-radius: 20px
+            position: relative
+            margin-right: 1rem
+            display: grid
+            place-items: center
+            img
+                border-radius: 20px !important
+            .check_icon
+                color: #FFF
+                z-index: 2
+                position: absolute
+                right: -5px
+                bottom: -5px
+                width: 20px
+                height: 20px
+                background: variables.$purple-color
+                border-radius: 50%
+                display: grid
+                place-items: center
+                font-size: 20px
+        .about_seller
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .seller_details_link
+                font-size: 18px
+                font-weight: 700
+                text-transform: capitalize
+                color: var(--main_text_color)
+                line-height: 24px
+                transition: all variables.$hover-trans-d
+                &:hover
+                    color: variables.$purple-color
+            .seller_username
+                font-size: 13px
+                color: variables.$gray-color
+            .seller_earn
+                font-weight: 700
+    .seller_rate
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+        span
+            font-size: 18px
+            font-weight: 800
+            color: variables.$gray-color
+        .follow_seller_link
+            text-transform: capitalize
+            color: #Fff
+            border: 1px solid #fff
+            padding: 0.25rem .75rem
+            font-size: 12px
+            border-radius: 222px
+            font-weight: 600
+            transition: all variables.$hover-trans-d
+            &:hover
+                background: #fff
+                color: variables.$purple-color
+
+html[data-theme='light']
+    .follow_seller_link
+        color: variables.$purple-color !important
+        border: 1px solid variables.$purple-color !important
+        &:hover
+            background: variables.$purple-color !important
+            color: #fff !important

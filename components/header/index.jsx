@@ -18,6 +18,7 @@ export default function Header() {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
+    window && window.scrollY >= 1 ? setIsSticky(true) : setIsSticky(false);
     window.onscroll = () => {
       window.scrollY >= 1 ? setIsSticky(true) : setIsSticky(false);
     };
@@ -58,7 +59,7 @@ export default function Header() {
                 <FiSearch />
               </button>
               <div className="mx-3 mx-sm-4 d-none d-sm-block">
-                <CtaButton href={"/"}>
+                <CtaButton href={"/wallet-connect"}>
                   <IoWallet className="me-md-2" />
                   <span className="d-none d-md-block"> Wallet connect</span>
                 </CtaButton>
