@@ -1,6 +1,7 @@
 import Hero from "../components/home-hero";
 import NFTCard from "../components/nft-card";
 import SellerCard from "../components/seller-card";
+import CollectionCard from "../components/collection-card";
 
 export default function Home() {
   return (
@@ -22,6 +23,14 @@ export default function Home() {
           <SellerCard id={4} />
           <SellerCard id={5} />
           <SellerCard id={6} />
+        </div>
+      </div>
+      <div className="container my-5">
+        <div className="row">
+          <CollectionCard id={1} />
+          <CollectionCard id={2} />
+          <CollectionCard id={3} />
+          <CollectionCard id={1} />
         </div>
       </div>
     </div>
