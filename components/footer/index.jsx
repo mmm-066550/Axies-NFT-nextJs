@@ -136,7 +136,7 @@ export default function Footer() {
                     className={styles.footer_social_link}
                     href="https://github.com/mmm-066550"
                     target={"_blank"}
-                    rel="noopener norefer"
+                    rel="noopener noreferrer"
                   >
                     <FiGithub />
                   </a>
@@ -146,7 +146,7 @@ export default function Footer() {
                     className={styles.footer_social_link}
                     href="https://www.linkedin.com/in/mmm066550"
                     target={"_blank"}
-                    rel="noopener norefer"
+                    rel="noopener noreferrer"
                   >
                     <FaLinkedinIn />
                   </a>
@@ -156,7 +156,7 @@ export default function Footer() {
                     className={styles.footer_social_link}
                     href="https://www.fb.com/MOUSTAPHAMAHMMOUD"
                     target={"_blank"}
-                    rel="noopener norefer"
+                    rel="noopener noreferrer"
                   >
                     <AiFillFacebook />
                   </a>
@@ -167,7 +167,7 @@ export default function Footer() {
                     className={styles.footer_social_link}
                     href="https://www.upwork.com/freelancers/~01cfdc33084883523e"
                     target={"_blank"}
-                    rel="noopener norefer"
+                    rel="noopener noreferrer"
                   >
                     <SiUpwork />
                   </a>
@@ -177,7 +177,7 @@ export default function Footer() {
                     className={styles.footer_social_link}
                     href="https://www.instagram.com/moustapha.mm"
                     target={"_blank"}
-                    rel="noopener norefer"
+                    rel="noopener noreferrer"
                   >
                     <AiFillInstagram />
                   </a>
@@ -187,7 +187,7 @@ export default function Footer() {
                     className={styles.footer_social_link}
                     href="/"
                     target={"_blank"}
-                    rel="noopener norefer"
+                    rel="noopener noreferrer"
                   >
                     <BsTwitter />
                   </a>
