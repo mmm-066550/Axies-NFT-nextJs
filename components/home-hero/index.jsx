@@ -60,6 +60,7 @@ export default function Hero() {
                   height={450}
                   alt={"track-bg"}
                   src={"/static/assets/images/track.png"}
+                  loading="eager"
                 />
                 <Image
                   width={354}
@@ -67,6 +68,7 @@ export default function Hero() {
                   layout="fixed"
                   src={"/static/assets/images/char.png"}
                   alt="toy"
+                  loading="eager"
                 />
               </div>
             </div>

@@ -1,0 +1,28 @@
+@use '../../styles/variables'
+.category_card_styled
+    background-color: var(--second_bg_color)
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 20%)
+    border-radius: 20px
+    padding: 20px
+    transition: all variables.$hover-trans-d
+    &:hover
+        transform: translateY(-10px)
+        .category_img_wrapper
+            img
+                transform: scale(1.05) !important
+    .category_name
+        margin: 0.25rem 0
+        font-size: 24px
+        padding-bottom:  0.75rem
+        font-weight: 700
+        text-transform: capitalize
+    .category_img_wrapper
+        position: relative
+        overflow: hidden
+        min-height: 200px
+        border-radius: 10px
+        background: var(--main_bg_color)
+        display: grid
+        place-items: center
+        img
+            transition: all variables.$hover-trans-d

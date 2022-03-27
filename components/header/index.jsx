@@ -44,6 +44,7 @@ export default function Header() {
                       height={56}
                       layout="fixed"
                       quality={100}
+                      loading="eager"
                     />
                   )}
                 </a>

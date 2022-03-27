@@ -29,6 +29,7 @@ export default function Footer() {
                       height={56}
                       layout="fixed"
                       quality={100}
+                      loading="eager"
                     />
                   )}
                 </a>
@@ -73,7 +74,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/live-auctions">
+                <Link href="/auctions">
                   <a className={styles.footer_nav_link}>Live Auctions</a>
                 </Link>
               </li>

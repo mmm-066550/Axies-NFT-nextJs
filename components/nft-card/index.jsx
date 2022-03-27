@@ -11,7 +11,7 @@ export default function NFTCard({ id, fullWidth }) {
     <div className={`my-3 ${fullWidth && "col-12 col-md-6 col-lg-4 col-xl-3"}`}>
       <div className={styles.nft_card_styled}>
         <div className={styles.nft_img_wrapper}>
-          <Link href={"/"}>
+          <Link href={"/item-details"}>
             <a>
               <Image
                 objectPosition={"center"}
@@ -30,7 +30,7 @@ export default function NFTCard({ id, fullWidth }) {
           <span className={styles.nft_comming_soon}>comming soon</span>
         </div>
         <div className={`${styles.nft_info_row}`}>
-          <Link href={"/"}>
+          <Link href={"/item-details"}>
             <a className={styles.nft_name}>The RenaiXance Rising The Sun</a>
           </Link>
           <span className={styles.nft_BSC}>BSC</span>
@@ -51,7 +51,7 @@ export default function NFTCard({ id, fullWidth }) {
             </div>
             <div className={styles.nft_owner_info}>
               <span className={styles.owned_by}>owned by</span>
-              <Link href={"/"}>
+              <Link href={"/authors"}>
                 <a className={styles.nft_owner_link}>salvador dali</a>
               </Link>
             </div>
@@ -66,7 +66,7 @@ export default function NFTCard({ id, fullWidth }) {
             <IoBagAddSharp className="me-2" />
             <span>place bid</span>
           </button>
-          <Link href={"/"}>
+          <Link href={"/activity"}>
             <a className={styles.nft_activity_link}>
               <MdLoop className="me-2" />
               <span>view history</span>

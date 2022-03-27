@@ -1,0 +1,85 @@
+@use '../../styles/variables'
+
+.item_details_component
+    .item_image_wrapper
+        position: relative
+        display: flex
+        width: 100%
+        height: 100%
+        border-radius: 20px 
+        overflow: hidden
+        min-height: 400px
+    .item_details
+        .item_title
+            font-size: 36px
+            font-weight: 700
+            text-transform: capitalize
+        .item_facts
+            .item_views,.item_likes
+                margin-right: .75rem
+                border-radius: 100px
+                color: #fff
+                background: #000
+                font-weight: 700
+                padding: .5rem 1rem
+                display: inline-flex
+                align-items: center
+                svg
+                    font-size: 18px
+        .item_overview
+            margin-bottom: 0
+            padding: .75rem 0
+        .item_facts
+            .item_fact
+                background-color: var(--second_bg_color)
+                box-shadow: 0px 3px 16px rgb(47 83 109 / 20%)
+                border-radius: 20px
+                padding: 15px 20px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                text-transform: capitalize
+                font-weight: 600
+                .item_fact_label
+                    font-size: 16px
+                .item_fact_value
+                    font-weight: 700
+                    font-size: 18px
+                    span
+                        font-weight: 300
+                        font-size: 13px
+        .place_bid_btn
+            display: flex
+            align-items: center
+            justify-content: center
+            font-weight: 700
+            padding: .7rem 1rem
+            text-transform: capitalize
+            border-radius: 1000px
+            border: 2px solid variables.$white-text-color
+            color: variables.$white-text-color 
+            transition: all variables.$hover-trans-d
+            svg
+                font-size: 20px
+                line-height: 0
+                margin-bottom: 2px
+            &:hover
+                border-color: variables.$white-text-color
+                background: #fff 
+                color: variables.$purple-color 
+
+html[data-theme='light'] 
+    .item_details_component
+        .item_details
+            .place_bid_btn
+                border-color: variables.$purple-color
+                color: variables.$purple-color 
+                &:hover
+                    background: variables.$purple-color 
+                    color: variables.$white-text-color 
+                    
+@media screen and ( min-width: 991px )
+    .item_details_component
+        .item_image_wrapper
+            min-height: 690px
+    

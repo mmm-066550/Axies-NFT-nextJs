@@ -58,14 +58,14 @@ export default function CollectionCard({ id, fullWidth }) {
           </div>
         </div>
         <div className={styles.collection_info}>
-          <Link href="/sd">
+          <Link href="/authors">
             <a className={styles.collection_details_link}>
               creative art collection
             </a>
           </Link>
           <div className={styles.collection_author}>
             <span>created by</span>
-            <Link href="/as">
+            <Link href="/authors">
               <a className={styles.collection_author_link}>Moustapha Mahmoud</a>
             </Link>
           </div>

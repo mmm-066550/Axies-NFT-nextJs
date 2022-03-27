@@ -3,8 +3,8 @@ import MainLayout from "../components/layout";
 import { ThemeProvider } from "next-themes";
 
 // GLOBAL STYLES
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/fonts.sass";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.sass";
 
 function MyApp({ Component, pageProps }) {

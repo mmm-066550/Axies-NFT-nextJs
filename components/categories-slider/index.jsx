@@ -2,20 +2,29 @@ import React from "react";
 import ViewRow from "../view-row";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import NFTCard from "../nft-card";
+import CategoryCard from "../category-card";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-export default function LiveAuctions() {
+const categories = [
+  { id: 1, name: "music" },
+  { id: 2, name: "domain names" },
+  { id: 3, name: "virtual world" },
+  { id: 4, name: "utility" },
+  { id: 5, name: "sports" },
+  { id: 6, name: "art" },
+];
+
+export default function CategoriesSlider() {
   return (
-    <div className="live_aucations_slider">
-      <ViewRow link={"/auctions"} title={"Live Auctions"} g_0={true}>
+    <div className="categories_slider">
+      <ViewRow link={"/explore"} title={"Browse By Category"} g_0={true}>
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={30}
           pagination={{
-            el: ".live_aucations_slider .swiper-pagination_wrapper",
+            el: ".categories_slider .swiper-pagination_wrapper",
             clickable: true,
           }}
           loop={true}
@@ -33,9 +42,9 @@ export default function LiveAuctions() {
             },
           }}
         >
-          {[...Array(6)].map((_, i) => (
+          {categories.map((_, i) => (
             <SwiperSlide key={i}>
-              <NFTCard id={i + 1} />
+              <CategoryCard category={_} id={i + 1} />
             </SwiperSlide>
           ))}
         </Swiper>
