@@ -5,7 +5,6 @@ import Link from "next/link";
 const siteMap = [
   { id: 0, name: "home", route: "/" },
   { id: 1, name: "explore", route: "/explore" },
-  { id: 2, name: "activity", route: "/activity" },
   { id: 3, name: "blog", route: "/blog" },
   { id: 4, name: "contact", route: "/contact" },
   { id: 5, name: "login", route: "/login" },

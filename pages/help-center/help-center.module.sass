@@ -1,0 +1,26 @@
+@use '../../styles/variables'
+
+.search_form
+    display: flex
+    width: 100%
+    input
+        width: 100%
+        outline: none
+        background: transparent
+        border-radius: 10px 0 0 10px
+        border: 1px solid variables.$gray-color
+        padding: 1.15rem 1.75rem
+        &::placeholder
+            line-height: 18px
+            font-size: 18px
+        &:focus
+            border-color: variables.$purple-color
+    button
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 130px
+        color: #fff
+        background: variables.$purple-color
+        border-radius: 0 10px 10px 0
+        font-size: 32px

@@ -15,7 +15,16 @@
         .component_icon
             animation: rotate 1s
     .component_icon
-        position: relative
+        position: relative 
+        &.iconed
+            background: variables.$purple-color
+            width: 60px
+            height: 60px
+            border-radius: 18px
+            display: grid
+            place-items: center
+            font-size: 32px
+            color: #FFF
     .login_link
         color: var(--main-text-color)
         transition: all variables.$hover-trans-d

@@ -18,6 +18,7 @@ export default function ContactPage() {
                 objectFit="cover"
                 objectPosition={"center"}
                 src={"/static/assets/images/contact.png"}
+                loading="eager"
               />
             </div>
           </div>

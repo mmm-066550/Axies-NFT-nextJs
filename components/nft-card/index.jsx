@@ -69,7 +69,7 @@ export default function NFTCard({ id, fullWidth, live }) {
               <IoBagAddSharp className="me-2" />
               <span>place bid</span>
             </button>
-            <Link href={"/activity"}>
+            <Link href={"/login"}>
               <a className={styles.nft_activity_link}>
                 <MdLoop className="me-2" />
                 <span>view history</span>

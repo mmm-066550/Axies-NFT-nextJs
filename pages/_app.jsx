@@ -7,6 +7,8 @@ import "../styles/fonts.sass";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.sass";
 
+// GLOBAL SCRIPTS
+
 function MyApp({ Component, pageProps }) {
   return (
     <>

@@ -73,9 +73,6 @@ export default function Header() {
               >
                 <ThemeIcon />
               </button>
-              <button className="ms-4 d-xl-none">
-                <GoThreeBars />
-              </button>
             </div>
           </div>
         </div>

@@ -1,6 +1,17 @@
 import React from "react";
 import WalletConnectComponent from "../../components/wallet-connect-component";
 
+const wallets = [
+  "Meta Mask",
+  "Bitski",
+  "Fortmatic",
+  "Wallet Connect",
+  "Coinbase Wallet",
+  "Authereum",
+  "Kaikas",
+  "Torus",
+];
+
 export default function WalletConnectPage() {
   return (
     <section className="wallet_connect_page py-5">
@@ -17,9 +28,14 @@ export default function WalletConnectPage() {
         </div>
       </div>
       <div className="container">
-        <div className="row">
-          {[...Array(8)].map((_, i) => (
-            <WalletConnectComponent id={i + 1} key={i} />
+        <div className="row ">
+          {wallets.map((_, i) => (
+            <WalletConnectComponent
+              link={"/login"}
+              name={_}
+              id={i + 1}
+              key={i}
+            />
           ))}
         </div>
       </div>

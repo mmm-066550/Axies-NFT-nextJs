@@ -83,11 +83,6 @@ export default function Footer() {
                   <a className={styles.footer_nav_link}>Item Details</a>
                 </Link>
               </li>
-              <li className={styles.footer_nav_list_item}>
-                <Link href="/activity">
-                  <a className={styles.footer_nav_link}>Activity</a>
-                </Link>
-              </li>
             </ul>
           </div>
           <div className="py-3 col-6 col-lg-4 col-xl-2">

@@ -25,14 +25,18 @@ export default function PageTitle() {
       {theme === "light" && <div className={styles.overlay}></div>}
       <div className={styles.content}>
         <h1 className={styles.current_page_title}>
-          {asPath.slice(1).replace("-", " ")}
+          {asPath.slice(1).replace("-", " ") === "faq"
+            ? "FAQ"
+            : asPath.slice(1).replace("-", " ")}
         </h1>
         <div className={styles.nav}>
           <Link href={"/"}>
             <a>home</a>
           </Link>
           <span>/</span>
-          {asPath.slice(1).replace("-", " ")}
+          {asPath.slice(1).replace("-", " ") === "faq"
+            ? "FAQ"
+            : asPath.slice(1).replace("-", " ")}
         </div>
       </div>
     </div>

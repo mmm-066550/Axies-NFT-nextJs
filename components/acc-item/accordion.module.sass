@@ -1,0 +1,27 @@
+@use '../../styles/variables'
+
+.accordion_item
+    width: 100%
+    background-color: var(--second_bg_color)
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 20%)
+    border-radius: 10000px
+    padding: 15px 30px
+    overflow: hidden
+    &.open
+        padding: 15px 30px
+        border-radius: 30px !important
+    .accordion_button
+        all: unset
+        cursor: pointer
+        width: 100%
+        font-size: 22px
+        font-weight: 700
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &::after
+            display: none
+        svg
+            color: variables.$purple-color
+    .accordion_body
+        color: variables.$gray-color
