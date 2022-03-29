@@ -19,7 +19,7 @@ const categories = [
 export default function CategoriesSlider() {
   return (
     <div className="categories_slider">
-      <ViewRow link={"/explore"} title={"Browse By Category"} g_0={true}>
+      <ViewRow title={"Browse By Category"} g_0={true}>
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={30}

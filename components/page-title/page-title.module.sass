@@ -1,3 +1,4 @@
+@use '../../styles/variables'
 .page_title_wrapper
     height: 300px
     position: relative
@@ -27,6 +28,7 @@
         height: 100%
         padding-top: 80px
         display: flex
+        flex-direction: column
         align-items: center
         justify-content: center
         .current_page_title
@@ -34,3 +36,15 @@
             font-size: 56px
             font-weight: 700
             text-transform: capitalize
+    .nav
+        text-transform: capitalize
+        font-size: 20px
+        color: #fff
+        a,span
+            color: variables.$gray-color !important
+            transition: all linear variables.$hover-trans-d
+        span
+            margin: 0 1rem
+        a
+            &:hover
+                color: #FFF !important

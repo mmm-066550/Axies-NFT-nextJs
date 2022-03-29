@@ -26,6 +26,32 @@ button
     padding-left: 30px
     padding-right: 30px
     max-width: 1440px
+.axies_input_style
+    background:  transparent
+    outline: none
+    border: 1px solid variables.$gray-color
+    padding: .8rem 1rem
+    border-radius: 8px
+    margin: .75rem 0
+    &::placeholder
+        color: variables.$gray-color
+select.axies_input_style
+    color: variables.$gray-color
+button.axies_input_style
+    display: flex
+    text-transform: capitalize
+    font-weight: 700
+    text-align: center
+    align-items: center
+    justify-content: center
+    border-radius: 1000px
+    color: var(--main_text_color)
+    border: 2px solid var(--main_text_color)
+    transition: all linear variables.$hover-trans-d
+    &:hover
+        color: #fff
+        border-color: variables.$purple-color
+        background: variables.$purple-color
 .heading
     font-size: 56px
     font-weight: 700
@@ -45,6 +71,10 @@ button
 .section_head
     font-size: 36px
     font-weight: 700
+.section_sub_head
+    color: variables.$gray-color
+    font-size: 18px
+    line-height: 28px
 .swiper-pagination_wrapper
     display: flex
     align-items: center

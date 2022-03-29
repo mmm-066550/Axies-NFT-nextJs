@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page-title.module.sass";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 export default function PageTitle() {
   const { theme } = useTheme();
@@ -26,6 +27,13 @@ export default function PageTitle() {
         <h1 className={styles.current_page_title}>
           {asPath.slice(1).replace("-", " ")}
         </h1>
+        <div className={styles.nav}>
+          <Link href={"/"}>
+            <a>home</a>
+          </Link>
+          <span>/</span>
+          {asPath.slice(1).replace("-", " ")}
+        </div>
       </div>
     </div>
   );

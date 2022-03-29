@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 
 export default function LiveAuctions() {
   return (
-    <div className="live_aucations_slider">
+    <div className="live_aucations_slider pt-5">
       <ViewRow link={"/auctions"} title={"Live Auctions"} g_0={true}>
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -35,7 +35,7 @@ export default function LiveAuctions() {
         >
           {[...Array(6)].map((_, i) => (
             <SwiperSlide key={i}>
-              <NFTCard id={i + 1} />
+              <NFTCard id={i + 1} live />
             </SwiperSlide>
           ))}
         </Swiper>

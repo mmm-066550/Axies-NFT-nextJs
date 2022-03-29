@@ -99,7 +99,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className={styles.footer_nav_list_item}>
-                <Link href="/contact-us">
+                <Link href="/contact">
                   <a className={styles.footer_nav_link}>Contact us</a>
                 </Link>
               </li>

@@ -1,0 +1,36 @@
+@use '../../styles/variables'
+
+.wallet_connect_component
+    background-color: var(--second_bg_color)
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 20%)
+    min-height: 200px
+    border-radius: 20px
+    padding: 40px 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    &:hover
+        .component_icon
+            animation: rotate 1s
+    .component_icon
+        position: relative
+    .login_link
+        color: var(--main-text-color)
+        transition: all variables.$hover-trans-d
+        font-weight: 700
+        font-size: 20px
+        margin: 1rem 0
+        text-transform: capitalize
+        &:hover
+            color: variables.$purple-color
+    .component_overview
+        font-size: 16px
+        line-height: 25px
+
+@keyframes rotate
+    0%
+        transform: rotateY(0deg)
+    100%
+        transform: rotateY(360deg)

@@ -6,7 +6,7 @@ import { IoBagAddSharp } from "react-icons/io5";
 import { MdLoop } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 
-export default function NFTCard({ id, fullWidth }) {
+export default function NFTCard({ id, fullWidth, live }) {
   return (
     <div className={`my-3 ${fullWidth && "col-12 col-md-6 col-lg-4 col-xl-3"}`}>
       <div className={styles.nft_card_styled}>
@@ -27,7 +27,9 @@ export default function NFTCard({ id, fullWidth }) {
             <AiOutlineHeart className="me-1" />
             <span>100</span>
           </span>
-          <span className={styles.nft_comming_soon}>comming soon</span>
+          {live && (
+            <span className={styles.nft_comming_soon}>comming soon</span>
+          )}
         </div>
         <div className={`${styles.nft_info_row}`}>
           <Link href={"/item-details"}>
@@ -61,18 +63,20 @@ export default function NFTCard({ id, fullWidth }) {
             <span className={styles.current_bid_value}>3.34 ETH</span>
           </div>
         </div>
-        <div className={`${styles.nft_info_row}`}>
-          <button className={styles.nft_place_bid_btn}>
-            <IoBagAddSharp className="me-2" />
-            <span>place bid</span>
-          </button>
-          <Link href={"/activity"}>
-            <a className={styles.nft_activity_link}>
-              <MdLoop className="me-2" />
-              <span>view history</span>
-            </a>
-          </Link>
-        </div>
+        {!live && (
+          <div className={`${styles.nft_info_row}`}>
+            <button className={styles.nft_place_bid_btn}>
+              <IoBagAddSharp className="me-2" />
+              <span>place bid</span>
+            </button>
+            <Link href={"/activity"}>
+              <a className={styles.nft_activity_link}>
+                <MdLoop className="me-2" />
+                <span>view history</span>
+              </a>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

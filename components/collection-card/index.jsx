@@ -5,9 +5,13 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
-export default function CollectionCard({ id, fullWidth }) {
+export default function CollectionCard({ id, fullWidth, cols }) {
   return (
-    <div className={`my-3 ${fullWidth && "col-12 col-md-6 col-lg-4 col-xl-3"}`}>
+    <div
+      className={`my-3 ${
+        fullWidth && `col-12 col-md-6 col-lg-4 col-xl-${cols || 3}`
+      }`}
+    >
       <div className={styles.collection_card}>
         <div className={styles.collection_imgs_wrapper}>
           <span className={styles.collection_likes}>
