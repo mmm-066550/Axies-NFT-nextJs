@@ -8,7 +8,7 @@ export default function AccordionItem({ faq }) {
   return (
     <div className={`${styles.accordion_item} ${!close && styles.open}`}>
       <button
-        className={`${open && "collapsed"} accordion-button ${
+        className={`${close && "collapsed"} accordion-button ${
           styles.accordion_button
         }`}
         type="button"
