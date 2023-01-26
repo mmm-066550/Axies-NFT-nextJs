@@ -150,7 +150,7 @@ export default function Footer() {
                 <li>
                   <a
                     className={styles.footer_social_link}
-                    href="https://www.fb.com/MOUSTAPHAMAHMMOUD"
+                    href="https://www.fb.com/mmm066550"
                     target={"_blank"}
                     rel="noopener noreferrer"
                   >
